@@ -1,0 +1,829 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=PT+Sans+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=PT+Sans+Narrow&family=Playfair+Display&display=swap');
+
+*{
+	margin:0;
+	padding:0
+}
+body
+{
+	font-family:Sans-Serif, Arial !important;
+	 transition:all 0.5s ease;
+	 -webkit-transition:all 0.5s ease;
+	 -moz-transition:all 0.5s ease;
+}
+
+body, html
+{
+	
+}
+
+img
+{
+
+	width:100%
+}
+
+a
+{
+	text-decoration:none;
+	display:inline-block;
+}
+
+a:hover
+{
+	text-decoration:underline
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	font-weight:normal;
+	margin:10px 0px;
+}
+
+p{
+	line-height: 150%;
+	margin-bottom: 2em;
+	text-align: justify;
+	font-family: 'Josefin Sans', sans-serif;
+   font-family: 'Playfair Display', serif;
+   font-family: 'PT Sans Narrow', sans-serif;
+}
+.container_full
+{
+	width: 100%;
+	height:auto;
+}
+.container
+{
+	width:960px;
+	margin:0 auto;
+	display:block
+}
+
+.floatleft
+{
+   float:left
+}
+
+.floatright
+{
+    float:right
+}
+/*---------------------*/
+
+.stick
+{
+	position:fixed;
+	top:0px;
+	z-index:999;
+
+}
+.undrmnu_srch
+{
+   padding-top:0;
+   position:relative;
+   margin-bottom:30px;
+   margin-top:17px;
+   margin-right:11px;
+}
+.undrmnu_srch input
+{
+   width:300px; 
+   height:35px;
+   border:1px solid #ababab; 
+   border-radius:5px; 
+   box-sizing:border-box; 
+   -moz-box-sizing:border-box; 
+   -webkit-box-sizing:border-box; 
+   padding:0 10px; 
+   background:#fff; 
+   font:normal 14px Arial, Helvetica, sans-serif; 
+   color:#1F5A9D; 
+   margin-top:-5px 
+}
+.undrmnu_srch input[type="submit"] 
+{
+    width:27px; 
+    height:27px;
+    cursor:pointer; 
+    text-indent:-999999px; 
+    border:none;
+    background:url(img/srchIcon.png) no-repeat;
+     position:absolute; 
+     right:13px; 
+     top:6px;
+  }
+.header
+{
+	background-color:black;
+}
+.header ul
+{
+  list-style-type:none;
+  display:flex;
+}
+.header ul li 
+{
+  position:relative;
+}
+.header ul>li a
+{  
+	text-decoration:none;
+	padding:20px 30px;
+	color:#afaaaa;
+	font-family: 'Merriweather', serif;
+}
+.header ul li a:hover
+{
+	color:#fff;
+}
+
+.header ul li ul
+{
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  left:-999999px;
+  z-index:88;
+  background-color:black;
+
+}
+.header ul li ul li
+{
+ 
+}
+.header ul li ul a
+{
+  padding:10px 20px;
+}
+.header ul li:hover ul
+{
+	left:0px;
+}
+
+.nav
+{   
+	min-height:60px;
+	background-color:black;
+	position:relative;
+	top:240px;
+	opacity:0.7;
+}
+.nav ul
+{
+  list-style-type:none;
+  display:flex;
+}
+.nav ul li
+{
+  
+}
+.nav ul li a 
+{
+   text-decoration:none;
+   padding:20px 20px;
+   color:#afaaaa;
+   font-family: 'Merriweather', serif;
+}
+.nav ul li a:hover
+{
+	color:#fff;
+}
+.sub_header
+{   
+	height:300px;
+	background-image:url(img/ahsan-manzil-full-view.jpg);
+	background-position:center;
+	background-size:cover;
+}
+
+/* main1 start*/
+
+#main1
+{
+	display:grid;
+	grid-template-columns:185px auto 185px;
+	grid-gap:20px;
+}
+#aside1 
+{
+    
+}
+#aside1 h1
+{
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color:green;
+  font-weight:bold;
+  padding:10px;
+  color:white;
+  margin-bottom:0px;
+}
+
+#main1 #aside1 ul
+{
+   list-style-type:none;
+   padding:20px;
+    background-color:#F2FB6E;
+   
+}
+
+#main1 #aside1 ul li
+{
+
+  padding:5px 15px;
+
+}
+
+#main1 #aside1 ul li a
+{
+  
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size:20px;
+  color:black;
+
+}
+#aside2 h1
+{
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color:green;
+  font-weight:bold;
+  padding:10px;
+  color:white;
+  margin-bottom:0px;
+}
+
+#main1 #aside2 ul
+{
+    list-style-type:none;
+    padding:20px;
+    background-color:#F2FB6E;
+   
+}
+
+#main1 #aside2 ul li
+{
+   padding:5px 15px;
+}
+
+#main1 #aside2 ul li a
+{
+	 font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:20px;
+    color:black;
+
+}
+
+#main1 #article1 h1
+{
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color:#BEBEBE;
+  font-size:30px; 
+}
+#main1 #article1 p
+{
+  font-size:18px;
+}
+
+ /* main2 start*/
+
+#main2
+{
+	display:grid;
+	grid-template-columns:185px auto 185px;
+	grid-gap:20px;
+}
+ #main2 #aside3 h1
+{
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color:green;
+  font-weight:bold;
+  padding:10px;
+  color:white;
+  margin-bottom:0px;
+}
+
+#aside3
+{
+	margin-top:-94px;
+}
+
+#main2 #aside3 ul
+{
+   list-style-type:none;
+   padding:20px;
+    background-color:#F2FB6E;
+   
+}
+
+#main2 #aside3 ul li
+{
+
+  padding:5px 15px;
+
+}
+
+#main2 #aside3 ul li a
+{
+  
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size:20px;
+  color:black;
+
+}
+#aside4 
+{
+	margin-top:-94px;
+}
+#aside4 h1
+{
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color:green;
+  font-weight:bold;
+  padding:10px;
+  color:white;
+  margin-bottom:0px;
+}
+
+#main2 #aside4 ul
+{
+    list-style-type:none;
+    padding:20px;
+    background-color:#F2FB6E;
+   
+}
+
+#main2 #aside4 ul li
+{
+   padding:5px 15px;
+}
+
+#main2 #aside4 ul li a
+{
+	 font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:20px;
+    color:black;
+
+}
+
+#main2 #article2 p
+{
+  font-size:18px;
+}
+
+/*main3 start*/
+
+#main3
+{
+	display:grid;
+	grid-template-columns:185px auto 185px;
+	grid-gap:20px;
+}
+ #main3 #aside5 h1
+{
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color:green;
+  font-weight:bold;
+  padding:10px;
+  color:white;
+  margin-bottom:0px;
+}
+
+#aside5
+{
+	margin-top:-102px;
+}
+
+#main3 #aside5 ul
+{
+   list-style-type:none;
+   padding:20px;
+    background-color:#F2FB6E;
+   
+}
+
+#main3 #aside5 ul li
+{
+
+  padding:5px 15px;
+
+}
+
+#main3 #aside5 ul li a
+{
+  
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size:20px;
+  color:black;
+
+}
+#aside6
+{
+	margin-top:-102px;
+}
+#aside6 h1
+{
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color:green;
+  font-weight:bold;
+  padding:10px;
+  color:white;
+  margin-bottom:0px;
+}
+
+#main3 #aside6 ul
+{
+    list-style-type:none;
+    padding:20px;
+    background-color:#F2FB6E;
+   
+}
+
+#main3 #aside6 ul li
+{
+   padding:5px 15px;
+}
+
+#main3 #aside6 ul li a
+{
+	 font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:20px;
+    color:black;
+
+}
+
+#main3 #article3 p
+{
+  font-size:18px;
+}
+
+  /*main4 asisde7 & aside8 start*/
+
+#main4
+{
+	display:grid;
+	grid-template-columns:185px auto 185px;
+	grid-gap:20px;
+}
+ #main4 #aside7 h1
+{
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color:green;
+  font-weight:bold;
+  padding:10px;
+  color:white;
+  margin-bottom:0px;
+}
+
+#aside7
+{
+	margin-top:-29px;
+}
+
+#main4 #aside7 ul
+{
+   list-style-type:none;
+   padding:20px;
+    background-color:#F2FB6E;
+   
+}
+
+#main4 #aside7 ul li
+{
+
+  padding:5px 15px;
+
+}
+
+#main4 #aside7 ul li a
+{
+  
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size:20px;
+  color:black;
+
+}
+#aside8
+{
+	margin-top:-29px;
+}
+#aside8 h1
+{
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color:green;
+  font-weight:bold;
+  padding:10px;
+  color:white;
+  margin-bottom:0px;
+}
+
+#main4 #aside8 ul
+{
+    list-style-type:none;
+    padding:20px;
+    background-color:#F2FB6E;
+   
+}
+
+#main4 #aside8 ul li
+{
+   padding:5px 15px;
+   margin-left: -30px;
+}
+#main4 #aside8 ul li label
+{
+  font-size:20px;
+}
+
+#main4 #aside8 ul li input[type=text],input[type=email]
+{
+    border-radius:5px;
+    height:20px;
+}
+#main4 #aside8 ul li input[type=submit]
+{
+  padding:5px 20px;
+  background-color:green;
+  color:white;
+  border:2px solid green;
+}
+
+#main4 #aside8 ul li a
+{
+	 font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:20px;
+    color:black;
+
+}
+
+#main4 #article4 p
+{
+    font-size:18px;
+}
+
+/*main5 aside 9 & 10 start*/
+
+#main5
+{
+	display:grid;
+	grid-template-columns:185px auto 185px;
+	grid-template-rows:285px;
+	grid-gap:20px;
+
+}
+ #main5 #aside9 h1
+{
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color:green;
+  font-weight:bold;
+  padding:10px;
+  color:white;
+  margin-bottom:0px;
+}
+
+#aside9
+{
+	margin-top:-10px;
+    background-color:#F2FB6E;
+}
+
+#main5 #aside9 ul
+{
+    list-style-type:none;
+    padding:20px;
+   
+   
+}
+
+#main5 #aside9 ul li
+{
+
+  padding:5px 15px;
+
+}
+
+#main5 #aside9 ul li a
+{
+  
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size:20px;
+  color:black;
+
+}
+#aside10
+{
+	margin-top:-37px;
+	background-color:#F2FB6E;
+}
+#aside10 h1
+{
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color:green;
+  font-weight:bold;
+  padding:10px;
+  color:white;
+  margin-bottom:0px;
+}
+
+#main5 #aside10 ul
+{
+    list-style-type:none;
+    padding:20px;
+    background-color:#F2FB6E;
+   
+}
+
+#main5 #aside10 ul li
+{
+    padding:5px 15px;
+}
+
+#main5 #aside10 ul li a
+{
+  
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size:20px;
+  color:black;
+
+}
+
+#main5 #article5 p
+{
+    font-size:18px;
+}
+
+#main5 #article5 blockquote
+{   
+	background-image: url(img/quote.png);
+	background-repeat:no-repeat;
+	background-size: 29px 32px;
+    background-position: 5px 16px;
+	background-color:#d6d4d4;
+	padding:32px;
+	border-left:5px solid yellow;
+	margin-left:30px;
+	margin-bottom:20px;
+
+
+}
+
+/*footer aside 11 & 12 start*/
+
+.footer
+{
+	background:#312F30;
+	display:grid;
+	grid-template-columns:1fr auto 1fr;
+	    margin-top: 5px;
+}
+
+#aside11
+{
+	padding:10px;
+}
+.footer #aside11 h1
+{
+	font-family: 'Josefin Sans', sans-serif;
+   font-family: 'PT Sans Narrow', sans-serif;
+   font-weight:bold;
+   padding:10px;
+   color:white;
+   border-bottom:3px solid white;
+}
+
+.footer #aside11 ul
+{
+    list-style-type:none;
+    
+}
+
+.footer #aside11 ul li
+{
+
+  padding:3px 15px;
+
+}
+
+.footer #aside11 ul li a
+{
+  
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size:20px;
+  color:white;
+
+}
+#aside12
+{
+  padding:10px;
+	
+}
+#aside12 h1
+{
+   font-family: 'Josefin Sans', sans-serif;
+   font-family: 'PT Sans Narrow', sans-serif;
+   font-weight:bold;
+   padding:10px;
+   color:white;
+   border-bottom:3px solid white;
+}
+
+ #aside12 ul
+{
+
+    list-style-type:none;
+    padding:20px;
+    display:flex;
+}
+.footer #aside12 ul li
+{
+    padding:5px 15px;
+}
+
+.footer #aside12 ul li a
+{
+  
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size:20px;
+  color:white;
+
+}
+#article6
+{
+	padding:10px;
+}
+
+.footer #article6 h1
+{
+
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight:bold;
+  padding:10px;
+  color:white;
+   border-bottom:3px solid white;
+}
+.footer #article6 ul
+{   
+
+    list-style-type:none;
+    
+}
+.footer #article6 ul li
+{
+   padding:3px 15px;
+}
+.footer #article6 ul li a
+{
+	font-family: 'Josefin Sans', sans-serif;
+   font-family: 'Playfair Display', serif;
+   font-family: 'PT Sans Narrow', sans-serif;
+   font-size:20px;
+   color:white;
+}
+.para
+{
+	background-color:#FFA500;
+	text-align:center;
+
+}
